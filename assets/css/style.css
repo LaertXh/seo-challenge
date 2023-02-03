@@ -7,7 +7,7 @@
 body {
     background-color: #d9dcd6;
 }
-
+/* all the required attributes for the header have moved from the div elements and added here */
 header {
     
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -22,7 +22,7 @@ h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* css attributes for the navigation bar added to the header */
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -30,7 +30,7 @@ nav {
     font-size: 20px;
 }
 
-ul li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -39,22 +39,39 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/* font size was increased for accessibility reasons */
 p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
-.background {
+/* footer doesn't use a class anymore since it was  changed from a div to using  appropriate tags */
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+/* this is the big picture that the user gets presented with, it  now fits properly in the screen */
+.intro-image {
     display: inline-block;
     margin-bottom: 25px;
 }
-
-.background img {
+/* with and  height are both set to 100% so teh image is not clipped. The image is contained so no overflow occurs */
+.intro-image img {
     width: 100%;
     height: 100%;
     background-size: contain;
     background-position: center;
 }
+
+
+/* THE REST OF THE CODE IS NOT TOUCHED BY ME SINCE I MADE NO CHANGE TO IT IN THE HTML PART */
+
 
 .float-left {
     float: left;
@@ -183,15 +200,4 @@ p {
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
-}
-
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-.footer h2 {
-    font-size: 20px;
 }
